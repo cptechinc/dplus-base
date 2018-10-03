@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Base Classes and Attributes",
     "keywords": ["dplus-base", "dplus-attributes"],
-    "homepage": "http://github.com/cptechinc/dplus-base",
+    "homepage": "https://github.com/cptechinc/dplus-base",
 	"autoload": {
 		"files": [
 			"src/traits/CreateFromObjectArray.trait.php",
