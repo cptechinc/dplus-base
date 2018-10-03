@@ -31,7 +31,8 @@
             'inner',
             'outer',
             'right',
-            'like'
+            'like', 
+            'on'
         );
         
         /**
@@ -51,7 +52,13 @@
             }
             return $sqlformat;
         }
-
+        
+        /**
+         * Takes the filters array and adds where statements for each filter based on its type
+         * @param  array $filters      Filters Keyed by filter
+         * @param  array $filtertypes  Properties for each filter
+         * @return void
+         */
         public function generate_filters($filters, $filtertypes) {
             foreach ($filters as $filter => $filtervalue) {
                 switch ($filtertypes[$filter]['querytype']) {
@@ -146,7 +153,7 @@
          * @return string SQL Query
          */
         public function generate_sqlquery() {
-            $sql = $this->render();
+            $sql = $this->getDebugQuery();
             $sql = str_replace(',', ', ', $sql);
             $sql = str_replace('!=', ' != ', $sql);
             $sql = str_replace('`=``', '` = `', $sql);
@@ -195,6 +202,4 @@
             $replacewith = array('%', '');
             return '%'.str_replace($replace, $replacewith, $keyword).'%';;
         }
-        
-        
     }
