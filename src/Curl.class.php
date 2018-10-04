@@ -267,7 +267,8 @@
                 $class = "HTTPAuthentication_".ucfirst($type);
                 return new $class();
             } else {
-                $this->error("$type is not a valid HTTP Authentication type");
+                $httpauth = new HTTPAuthentication();
+                $httpauth->error("$type is not a valid HTTP Authentication type");
             }
         }
     }

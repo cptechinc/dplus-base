@@ -3,10 +3,16 @@
     "type": "library",
     "description": "Base Classes and Attributes",
     "keywords": ["dplus-base", "dplus-attributes"],
-    "homepage": "https://github.com/cptechinc/dplus-base",
+	"homepage": "https://github.com/cptechinc/dplus-base",
+	"require": {
+		"atk4/dsql": "1.1"
+	},
 	"autoload": {
 		"psr-4": {
 			"dplus\\base\\": "src/"
-		}
+		},
+		"files":[
+			"src/utfport.php"
+		]
 	}
 }
