@@ -1,5 +1,5 @@
 <?php 
-    namespace dplus\base;
+    namespace Dplus\Base;
     
     /**
      * Class for sending cURL Requests to Servers

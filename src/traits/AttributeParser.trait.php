@@ -1,5 +1,5 @@
 <?php
-    namespace dplus\base;
+    namespace Dplus\Base;
     
 	/**
 	 * Functions that parse attributes for html

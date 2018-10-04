@@ -1,5 +1,5 @@
 <?php
-	namespace dplus\base;
+	namespace Dplus\Base;
 	
 	/**
 	 * Functions that let the traited class have abilities to make arrays of an instance or
