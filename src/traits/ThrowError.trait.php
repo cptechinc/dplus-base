@@ -1,4 +1,6 @@
 <?php 
+	namespace dplus\base;
+	
 	/**
 	 * Functions that throw, show, or log errors
 	 */

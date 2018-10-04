@@ -1,4 +1,6 @@
 <?php 
+    namespace dplus\base;
+    
     /**
      * Class for sending cURL Requests to Servers
      */

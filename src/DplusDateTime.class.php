@@ -1,4 +1,6 @@
 <?php
+	namespace dplus\base;
+	
 	/**
 	 * Class That converts dates and times and defaults to converting Dates and Times from the DPlus Cobol System
 	 */

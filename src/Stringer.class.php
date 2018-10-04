@@ -1,4 +1,6 @@
 <?php
+	namespace dplus\base;
+	
 	class StringerBell {
 		/**
 		 * Checks to see if string is in a phone format

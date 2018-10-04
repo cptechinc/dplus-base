@@ -1,4 +1,6 @@
 <?php
+	namespace dplus\base;
+	
 	/**
 	 * Functions that let the traited class have abilities to make arrays of an instance or
 	 * an array of all the properties
