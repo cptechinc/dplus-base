@@ -7,20 +7,44 @@ namespace Composer\Autoload;
 class ComposerStaticInit88cf2e8d27212994237a95cfcf23603b
 {
     public static $files = array (
-        '56345177f5f7f787cb6c9ae1480ca922' => __DIR__ . '/../..' . '/src/traits/CreateFromObjectArray.trait.php',
-        'ca14a402528efd4be81afb313b854d0b' => __DIR__ . '/../..' . '/src/traits/CreateClassArray.trait.php',
-        '664f3baa9d36eeebdcf11afd6014920b' => __DIR__ . '/../..' . '/src/traits/AttributeParser.trait.php',
-        '37f14f34aaba400ed3b1f27dc8c22515' => __DIR__ . '/../..' . '/src/traits/ThrowError.trait.php',
-        'b863590895f481ceb8285e38fd229ee7' => __DIR__ . '/../..' . '/src/traits/MagicMethods.trait.php',
-        'f5009746d9e3c4810b7260550777b79e' => __DIR__ . '/../..' . '/src/traits/Filterable.trait.php',
-        'bd8bf74d70613675ab92685140191001' => __DIR__ . '/../..' . '/src/DplusDateTime.class.php',
-        '158870b1f2d9e740dbb61458a8e9f8e4' => __DIR__ . '/../..' . '/src/Stringer.class.php',
-        'e7bd84634f16b13048928918a5f7e5ad' => __DIR__ . '/../..' . '/src/QueryBuilder.class.php',
+        '31598dbb6e918e6fea9d130ff4f8032b' => __DIR__ . '/../..' . '/src/utfport.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'D' => 
+        array (
+            'Dplus\\Base\\' => 11,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Dplus\\Base\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+    );
+
+    public static $classMap = array (
+        'Dplus\\Base\\AttributeParser' => __DIR__ . '/../..' . '/src/traits/AttributeParser.trait.php',
+        'Dplus\\Base\\CreateClassArrayTraits' => __DIR__ . '/../..' . '/src/traits/CreateClassArray.trait.php',
+        'Dplus\\Base\\CreateFromObjectArrayTraits' => __DIR__ . '/../..' . '/src/traits/CreateFromObjectArray.trait.php',
+        'Dplus\\Base\\Curl' => __DIR__ . '/../..' . '/src/Curl.class.php',
+        'Dplus\\Base\\DplusDateTime' => __DIR__ . '/../..' . '/src/DplusDateTime.class.php',
+        'Dplus\\Base\\Filterable' => __DIR__ . '/../..' . '/src/traits/Filterable.trait.php',
+        'Dplus\\Base\\HTTPAuthentication' => __DIR__ . '/../..' . '/src/Curl.class.php',
+        'Dplus\\Base\\HTTPAuthentication_Oauth2' => __DIR__ . '/../..' . '/src/Curl.class.php',
+        'Dplus\\Base\\MagicMethodTraits' => __DIR__ . '/../..' . '/src/traits/MagicMethods.trait.php',
+        'Dplus\\Base\\QueryBuilder' => __DIR__ . '/../..' . '/src/QueryBuilder.class.php',
+        'Dplus\\Base\\StringerBell' => __DIR__ . '/../..' . '/src/Stringer.class.php',
+        'Dplus\\Base\\ThrowErrorTrait' => __DIR__ . '/../..' . '/src/traits/ThrowError.trait.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit88cf2e8d27212994237a95cfcf23603b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit88cf2e8d27212994237a95cfcf23603b::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit88cf2e8d27212994237a95cfcf23603b::$classMap;
 
         }, null, ClassLoader::class);
     }
