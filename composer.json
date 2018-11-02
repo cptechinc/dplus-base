@@ -27,7 +27,7 @@
 		},
 		"files":[
             "src/utfport.php",
-            "src/Model.class.php"
+            "src/ModelClass.class.php"
 		]
 	}
 }
