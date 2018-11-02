@@ -37,6 +37,7 @@ class ComposerStaticInit88cf2e8d27212994237a95cfcf23603b
         'Dplus\\Base\\QueryBuilder' => __DIR__ . '/../..' . '/src/QueryBuilder.class.php',
         'Dplus\\Base\\StringerBell' => __DIR__ . '/../..' . '/src/Stringer.class.php',
         'Dplus\\Base\\ThrowErrorTrait' => __DIR__ . '/../..' . '/src/traits/ThrowError.trait.php',
+        'Dplus\\Base\\Validator' => __DIR__ . '/../..' . '/src/Validator.class.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
