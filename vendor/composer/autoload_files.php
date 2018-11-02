@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     '31598dbb6e918e6fea9d130ff4f8032b' => $baseDir . '/src/utfport.php',
+    'b82bc11a31133944698647268770fa22' => $baseDir . '/src/Model.class.php',
 );
