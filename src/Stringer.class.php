@@ -145,4 +145,14 @@
 			);
 			return urlencode(str_replace(array_keys($replace), array_values($replace), $str));
 		}
+
+		/**
+		 * returns true if $needle is a substring of $haystack
+		 * @param  string $needle   Possbile Substring 
+		 * @param  string $haystack String to find Substring in
+		 * @return bool             Is needle found in haystack?
+		 */
+		public function contains($needle, $haystack) {
+			return strpos($haystack, $needle) !== false;
+		}
 	}
