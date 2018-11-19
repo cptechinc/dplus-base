@@ -1,8 +1,11 @@
 <?php
 	namespace Dplus\Base;
 	
-	use Dplus\Content\HTMLWriter as HTMLWriter;
+	use Dplus\Content\HTMLWriter;
 	
+	/**
+	 * Class for dealing with Strings
+	 */
 	class StringerBell {
 		/**
 		 * Checks to see if string is in a phone format
@@ -147,7 +150,7 @@
 		}
 
 		/**
-		 * returns true if $needle is a substring of $haystack
+		 * Returns true if $needle is a substring of $haystack
 		 * @param  string $needle   Possbile Substring 
 		 * @param  string $haystack String to find Substring in
 		 * @return bool             Is needle found in haystack?
