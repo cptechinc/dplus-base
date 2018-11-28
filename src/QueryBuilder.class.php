@@ -1,7 +1,7 @@
 <?php
     namespace Dplus\Base;
     
-    use atk\dsql\Query;
+    use atk4\dsql\Query;
 
     class QueryBuilder extends Query {
         /**
