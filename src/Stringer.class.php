@@ -1,8 +1,6 @@
 <?php
 	namespace Dplus\Base;
 	
-	use Dplus\Content\HTMLWriter;
-	
 	/**
 	 * Class for dealing with Strings
 	 */
@@ -64,29 +62,6 @@
 		 */
 		public function format_money($amt) {
 			return number_format($amt, 2, '.', ',');
-		}
-
-		/**
-		 * // NOTE THIS FUNCTION WILL BE MOVED TO Dplus\Content\HTMLWriter
-		 * Takes string and gives it a span of highlight to give it a highlighted look on the page
-		 * @param  string $haystack the string to look through
-		 * @param  string $needle   the word to look for
-		 * @return string           html string with the $needle highlighted or returns just the string
-		 */
-		public function highlight($haystack, $needle) {
-			$bootstrap = new HTMLWriter();
-			if ($this->does_matchphone($haystack)) {
-				$needle = $this->does_matchphone($needle);
-			}
-			$regex = "/(".str_replace('-', '\-?', $needle).")/i";
-			$contains = preg_match($regex, $haystack, $matches);
-
-			if ($contains) {
-				$highlight = $bootstrap->span('class=highlight', $matches[0]);
-				return preg_replace($regex, $highlight, $haystack);
-			} else {
-				return $haystack;
-			}
 		}
 
 		/* =============================================================

@@ -1,7 +1,9 @@
 <?php
     namespace Dplus\Base;
     
-    class QueryBuilder extends \atk4\dsql\Query {
+    use atk\dsql\Query;
+
+    class QueryBuilder extends Query {
         /**
          * $sqlkeywords is a list of SQL keywords that will be shown in uppercase when we debug the query
          * @var array
