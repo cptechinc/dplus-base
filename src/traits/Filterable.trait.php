@@ -2,6 +2,7 @@
 	namespace Dplus\Base;
 	
 	use ProcessWire\WireInput;
+	
 	/**
 	 * Functions that allow filtering of data through Arrays
 	 */

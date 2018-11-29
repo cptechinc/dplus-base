@@ -43,7 +43,7 @@
          * @return string             string of atrributes and values like class=""
          * @uses attributes()
          */
-		protected function generate_attributes($attributes) {
+		public function generate_attributes($attributes) {
 			return $this->attributes($attributes);
 		}
 		

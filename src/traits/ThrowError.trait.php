@@ -8,7 +8,7 @@
 		/**
 		 * Throws an error to be logged
 		 * @param  string $error Description of Error
-		 * @param  int $level What PHP Error Level
+		 * @param  int    $level What PHP Error Level
 		 * Error constants can be found at
 		 * http://php.net/manual/en/errorfunc.constants.php
 		 */
