@@ -16,8 +16,6 @@ return array(
     'Dplus\\Base\\HTTPAuthentication_Oauth2' => $baseDir . '/src/Curl.class.php',
     'Dplus\\Base\\MagicMethodTraits' => $baseDir . '/src/traits/MagicMethods.trait.php',
     'Dplus\\Base\\QueryBuilder' => $baseDir . '/src/QueryBuilder.class.php',
-    'Dplus\\Base\\ScreenMaker' => $baseDir . '/src/ScreenMaker.class.php',
-    'Dplus\\Base\\ScreenMakerFormatter' => $baseDir . '/src/ScreenMakerFormatter.class.php',
     'Dplus\\Base\\StringerBell' => $baseDir . '/src/Stringer.class.php',
     'Dplus\\Base\\ThrowErrorTrait' => $baseDir . '/src/traits/ThrowError.trait.php',
     'Dplus\\Base\\Validator' => $baseDir . '/src/Validator.class.php',

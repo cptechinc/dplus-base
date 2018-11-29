@@ -36,8 +36,6 @@ class ComposerStaticInit88cf2e8d27212994237a95cfcf23603b
         'Dplus\\Base\\HTTPAuthentication_Oauth2' => __DIR__ . '/../..' . '/src/Curl.class.php',
         'Dplus\\Base\\MagicMethodTraits' => __DIR__ . '/../..' . '/src/traits/MagicMethods.trait.php',
         'Dplus\\Base\\QueryBuilder' => __DIR__ . '/../..' . '/src/QueryBuilder.class.php',
-        'Dplus\\Base\\ScreenMaker' => __DIR__ . '/../..' . '/src/ScreenMaker.class.php',
-        'Dplus\\Base\\ScreenMakerFormatter' => __DIR__ . '/../..' . '/src/ScreenMakerFormatter.class.php',
         'Dplus\\Base\\StringerBell' => __DIR__ . '/../..' . '/src/Stringer.class.php',
         'Dplus\\Base\\ThrowErrorTrait' => __DIR__ . '/../..' . '/src/traits/ThrowError.trait.php',
         'Dplus\\Base\\Validator' => __DIR__ . '/../..' . '/src/Validator.class.php',
