@@ -3,7 +3,7 @@
 
     use Processwire\WireInput;
     use Dplus\ProcessWire\DplusWire;
-   
+    use Purl\Url as Purl;
 
 	/**
 	 * Abstract file to build Formatter classes from and to provide properties and methods
@@ -297,7 +297,7 @@
 			CLASS FUNCTIONS
 		============================================================ */
 		public function generate_previewurl() {
-			$url = new Purl\Url(DplusWire::wire('pages')->get("template=document-formatted-page,name=$this->code")->url);
+			$url = new Purl(DplusWire::wire('pages')->get("template=document-formatted-page,name=$this->code")->url);
 			$url->query->set('preview', 'preview');
 			$url->query->set('debug', 'debug');
 			return $url->getUrl();
@@ -368,7 +368,7 @@
 		 */
 		protected function load_formatter() {
 			if ($this->does_printformatterexist('default')) {
-				$this->formatter = get_printformatter($this->code, 'default');
+				$this->formatter = get_screenformatter($this->code, 'default');
 				$this->source = 'database';
 			} else {
 				$this->formatter = file_get_contents($this::$defaultformatterdirectory."$this->code.json");

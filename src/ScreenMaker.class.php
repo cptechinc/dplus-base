@@ -2,7 +2,8 @@
     namespace Dplus\Base;
 
     use Dplus\ProcessWire\DplusWire;
-
+    use Dplus\Content\HTMLWriter;
+    
 	/**
 	 * Abstract file to build Screen classes from and to provide properties and methods
 	 */
