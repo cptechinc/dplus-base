@@ -173,6 +173,28 @@
         }
 
         /**
+         * Parses the Paramterized query provided by $this->render()
+         * Returns it in a Easy to read format with SQL keywords in CAPS and spaces after commas
+         * // NOTE IT DOESN'T DO SO WELL WITH BIGGER QUERIES
+         * @return string SQL Query
+         */
+        public function render_sqlquery() {
+            $sql = $this->render();
+            $sql = str_replace(',', ', ', $sql);
+            $sql = str_replace('!=', ' != ', $sql);
+            $sql = str_replace('`=`', '` = `', $sql);
+            
+            foreach ($this->params as $param => $value) {
+                $sql = str_replace($param, "'".$value."'", $sql);
+            }
+            
+            foreach ($this->sqlkeywords as $keyword) {
+                $sql = preg_replace('/\b'.$keyword.'\b/', strtoupper($keyword), $sql);
+            }
+            return $sql;
+        }
+
+        /**
          * Returns filter description for the filter
          * @param  string $key         Name of filter
          * @param  array $val          Array of Values for that filter

@@ -59,13 +59,23 @@
         }
         
         /**
-         * Validate that value is a date string in the YYYMMDD format
+         * Validate that value is a date string in the YYYYMMDD format
          * 
          * @param    mixed    $var                 Value to validate
          * @return   bool
          */
         public function date_yyyymmdd($var) {
             return (empty($var) || preg_match('~^\d{8}$~', $var) === 1);
+        }
+
+        /**
+         * Validate that value is a date string in the YYYY-MM-DD format
+         * 
+         * @param    mixed    $var                Value to validate
+         * @return   bool
+         */
+        public function date_yyyymmdd_dashed($var) {
+            return (empty($var) || preg_match('~^\d{4}-\d{2}-\d{2}$~', $var) === 1);
         }
 
 
