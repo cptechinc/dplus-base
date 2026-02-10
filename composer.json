@@ -22,9 +22,7 @@
 		"atk4/dsql": "1.1"
 	},
 	"autoload": {
-		"psr-4": {
-			"Dplus\\Base\\": "src/"
-		},
+        "classmap": ["src/"],
 		"files":[
             "src/utfport.php",
             "src/ModelClass.class.php"

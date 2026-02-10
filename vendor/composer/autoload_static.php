@@ -11,21 +11,8 @@ class ComposerStaticInit88cf2e8d27212994237a95cfcf23603b
         '8845652c5d5e4c37c838e2913d6107f4' => __DIR__ . '/../..' . '/src/ModelClass.class.php',
     );
 
-    public static $prefixLengthsPsr4 = array (
-        'D' => 
-        array (
-            'Dplus\\Base\\' => 11,
-        ),
-    );
-
-    public static $prefixDirsPsr4 = array (
-        'Dplus\\Base\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
-    );
-
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Dplus\\Base\\AttributeParser' => __DIR__ . '/../..' . '/src/traits/AttributeParser.trait.php',
         'Dplus\\Base\\CreateClassArrayTraits' => __DIR__ . '/../..' . '/src/traits/CreateClassArray.trait.php',
         'Dplus\\Base\\CreateFromObjectArrayTraits' => __DIR__ . '/../..' . '/src/traits/CreateFromObjectArray.trait.php',
@@ -39,13 +26,13 @@ class ComposerStaticInit88cf2e8d27212994237a95cfcf23603b
         'Dplus\\Base\\StringerBell' => __DIR__ . '/../..' . '/src/Stringer.class.php',
         'Dplus\\Base\\ThrowErrorTrait' => __DIR__ . '/../..' . '/src/traits/ThrowError.trait.php',
         'Dplus\\Base\\Validator' => __DIR__ . '/../..' . '/src/Validator.class.php',
+        'Dplus\\Content\\Paginator' => __DIR__ . '/../..' . '/src/Paginator.class.php',
+        'ModelClass' => __DIR__ . '/../..' . '/src/ModelClass.class.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit88cf2e8d27212994237a95cfcf23603b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit88cf2e8d27212994237a95cfcf23603b::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit88cf2e8d27212994237a95cfcf23603b::$classMap;
 
         }, null, ClassLoader::class);
